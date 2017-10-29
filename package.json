@@ -2,11 +2,12 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "felipenmoura",
     "engines": {
         "vscode": "^1.17.0"
     },
+    "repository": "https://github.com/NascHQ/nasc-vscode-mac-touchbar",
     "categories": [
         "Other"
     ],
@@ -23,8 +24,8 @@
         "onCommand:nasc.touchBar.addCursorBellow"
     ],
     "main": "./extension",
-    "capabilities" : {
-        "definitionProvider" : "true"
+    "capabilities": {
+        "definitionProvider": "true"
     },
     "contributes": {
         "commands": [
@@ -62,32 +63,32 @@
         ],
         "menus": {
             "touchBar": [
-              {
-                "command": "nasc.touchBar.goToDefinition",
-                "group": "nasc"
-              },
-              {
-                "command": "nasc.touchBar.addCursorAbove",
-                "group": "nasc"
-              },
-              {
-                "command": "nasc.touchBar.addCursorBellow",
-                "group": "nasc"
-              },
-              {
-                "command": "workbench.action.toggleSidebarVisibility",
-                "group": "nasc"
-              },
-              {
-                "command": "workbench.action.togglePanel",
-                "group": "nasc"
-              },
-              {
-                "command": "workbench.action.showCommands",
-                "group": "nasc"
-              }
+                {
+                    "command": "nasc.touchBar.goToDefinition",
+                    "group": "nasc"
+                },
+                {
+                    "command": "nasc.touchBar.addCursorAbove",
+                    "group": "nasc"
+                },
+                {
+                    "command": "nasc.touchBar.addCursorBellow",
+                    "group": "nasc"
+                },
+                {
+                    "command": "workbench.action.toggleSidebarVisibility",
+                    "group": "nasc"
+                },
+                {
+                    "command": "workbench.action.togglePanel",
+                    "group": "nasc"
+                },
+                {
+                    "command": "workbench.action.showCommands",
+                    "group": "nasc"
+                }
             ]
-           }
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
