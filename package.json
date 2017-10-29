@@ -1,0 +1,48 @@
+{
+    "name": "nasc-touchbar",
+    "displayName": "Nasc VSCode Touchbar",
+    "description": "Adds useful tools to your macbook touchbar.",
+    "version": "0.0.1",
+    "publisher": "felipenmoura",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:nasc.touchBar.goToDefinition"
+    ],
+    "main": "./extension",
+    "capabilities" : {
+        "definitionProvider" : "true"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "command": "nasc.touchBar.goToDefinition",
+                "title": "X"
+            }
+        ],
+        "menus": {
+            "touchBar": [
+              {
+                "command": "nasc.touchBar.goToDefinition",
+                "group": "navigation"
+              }
+            ]
+           }        
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.2",
+        "vscode": "^1.1.5",
+        "mocha": "^3.5.0",
+        "eslint": "^4.6.1",
+        "@types/node": "^7.0.0",
+        "@types/mocha": "^2.2.42"
+    }
+}
