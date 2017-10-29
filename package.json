@@ -80,7 +80,7 @@
                 "group": "nasc"
               }
             ]
-           }        
+           }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",

@@ -107,6 +107,12 @@ function activate(context) {
                 vscode.commands.executeCommand('vscode.open', found.uri, 50).then(result => {
                     var editor = vscode.window.activeTextEditor;
                     editor.selection = newSelection
+                    vscode.commands.executeCommand('revealLine', {
+                        lineNumber: newSelection.start.line,
+                        at: 'center'
+                    }).then(result => {
+                    }, err => {
+                    })
                 }, err => {
                     console.log(err)
                 })
