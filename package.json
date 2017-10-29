@@ -10,6 +10,13 @@
     "categories": [
         "Other"
     ],
+    "keywords": [
+        "macbook",
+        "touch bar",
+        "touchbar",
+        "vscode",
+        "visual studio code"
+    ],
     "activationEvents": [
         "onCommand:nasc.touchBar.goToDefinition",
         "onCommand:nasc.touchBar.addCursorAbove",
