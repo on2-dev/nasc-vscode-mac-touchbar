@@ -36,6 +36,21 @@
                 "command": "nasc.touchBar.addCursorBellow",
                 "group": "nasc",
                 "title": "↓𝙸"
+            },
+            {
+                "command": "workbench.action.toggleSidebarVisibility",
+                "group": "nasc",
+                "title": "◧"
+            },
+            {
+                "command": "workbench.action.togglePanel",
+                "group": "nasc",
+                "title": "⬓"
+            },
+            {
+                "command": "workbench.action.showCommands",
+                "group": "nasc",
+                "title": ">_"
             }
         ],
         "menus": {
@@ -50,6 +65,18 @@
               },
               {
                 "command": "nasc.touchBar.addCursorBellow",
+                "group": "nasc"
+              },
+              {
+                "command": "workbench.action.toggleSidebarVisibility",
+                "group": "nasc"
+              },
+              {
+                "command": "workbench.action.togglePanel",
+                "group": "nasc"
+              },
+              {
+                "command": "workbench.action.showCommands",
                 "group": "nasc"
               }
             ]
