@@ -11,7 +11,9 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:nasc.touchBar.goToDefinition"
+        "onCommand:nasc.touchBar.goToDefinition",
+        "onCommand:nasc.touchBar.addCursorAbove",
+        "onCommand:nasc.touchBar.addCursorBellow"
     ],
     "main": "./extension",
     "capabilities" : {
@@ -21,14 +23,34 @@
         "commands": [
             {
                 "command": "nasc.touchBar.goToDefinition",
-                "title": "X"
+                "group": "nasc",
+                "when": "editorHasSelection",
+                "title": "→ƒ"
+            },
+            {
+                "command": "nasc.touchBar.addCursorAbove",
+                "group": "nasc",
+                "title": "↑𝙸"
+            },
+            {
+                "command": "nasc.touchBar.addCursorBellow",
+                "group": "nasc",
+                "title": "↓𝙸"
             }
         ],
         "menus": {
             "touchBar": [
               {
                 "command": "nasc.touchBar.goToDefinition",
-                "group": "navigation"
+                "group": "nasc"
+              },
+              {
+                "command": "nasc.touchBar.addCursorAbove",
+                "group": "nasc"
+              },
+              {
+                "command": "nasc.touchBar.addCursorBellow",
+                "group": "nasc"
               }
             ]
            }        
