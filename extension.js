@@ -1,9 +1,14 @@
 const vscode = require('vscode');
 const GO_MODE = { language: 'js', scheme: 'file' };
+// import { LanguageClient, LanguageClientOptions, SettingMonitor, ServerOptions } from 'vscode-languageclient';
+// import { vscode, workspace } from 'vscode';
+
+// Workspace.getConfiguration('eslint', textDocument.uri);
+// Workspace.getConfiguration('eslint',folder.uri).get('enabled', true)
+// Workspace.getConfiguration('eslint', folder.uri).update('enable', false)
 
 class GoDefinitionProvider {
     provideDefinition () {
-        debugger
         return new Promise((resolve, reject) => {
             return {
                 document: vscode.TextDocument,
@@ -41,6 +46,9 @@ function addCursor (direction) {
             return a.start.line > b.start.line
         })
         selection = direction === 'above' ? selections[0] : selections[selections.length -1]
+        if (selection.start.line === 0) {
+            return
+        }
         position = selection.active
     } else {
         selection = selections[0]
@@ -66,7 +74,6 @@ function addCursor (direction) {
 }
 
 function activate(context) {
-
     const go2Def = new GoDefinitionProvider()
     const aCA = vscode.commands.registerCommand('nasc.touchBar.addCursorAbove', function () {
         addCursor('above')
@@ -77,6 +84,7 @@ function activate(context) {
 
     vscode.commands.registerCommand('nasc.touchBar.goToDefinition', function () {
         var editor = vscode.window.activeTextEditor;
+        // debugger
         if (!editor) {
             return; // No open text editor
         }

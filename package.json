@@ -31,6 +31,7 @@
         "definitionProvider": "true"
     },
     "contributes": {
+        
         "commands": [
             {
                 "command": "nasc.touchBar.goToDefinition",
@@ -98,6 +99,9 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "icon": "nasc-macbook-pro-vscode-touch-bar.jpg",
+    "dependencies": {
+        "vscode-languageclient": "0.10.x"
+    },    
     "devDependencies": {
         "typescript": "^2.5.2",
         "vscode": "^1.1.5",
