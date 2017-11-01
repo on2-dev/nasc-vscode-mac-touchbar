@@ -68,30 +68,69 @@
             "touchBar": [
                 {
                     "command": "nasc.touchBar.goToDefinition",
-                    "group": "nasc"
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.goToDefinition"
                 },
                 {
                     "command": "nasc.touchBar.addCursorAbove",
-                    "group": "nasc"
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.addCursor"
                 },
                 {
                     "command": "nasc.touchBar.addCursorBellow",
-                    "group": "nasc"
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.addCursor"
                 },
                 {
                     "command": "workbench.action.toggleSidebarVisibility",
-                    "group": "nasc"
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.toggleSidebar"
                 },
                 {
                     "command": "workbench.action.togglePanel",
-                    "group": "nasc"
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.togglePanel"
                 },
                 {
                     "command": "workbench.action.showCommands",
-                    "group": "nasc"
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.showCommands"
                 }
             ]
-        }
+        },
+        "configuration": [
+            {
+                "title": "Something",
+                "type": "object",
+                "properties": {
+                    "nasc-touchbar.goToDefinition": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Go to Definition"
+                    },
+                    "nasc-touchbar.addCursor": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Add cursor above and below"
+                    },
+                    "nasc-touchbar.toggleSidebar": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Toggle Sidebar"
+                    },
+                    "nasc-touchbar.togglePanel": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Toggle Panel"
+                    },
+                    "nasc-touchbar.showCommands": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Show Commands"
+                    }
+                }
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
