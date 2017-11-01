@@ -63,6 +63,11 @@
                 "command": "workbench.action.showCommands",
                 "group": "nasc",
                 "title": ">_"
+            },
+            {
+                "command": "editor.action.rename",
+                "group": "nasc",
+                "title": "✎_"
             }
         ],
         "menus": {
@@ -86,6 +91,11 @@
                     "command": "workbench.action.toggleSidebarVisibility",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.toggleSidebar"
+                },
+                {
+                    "command": "editor.action.rename",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.rename"
                 },
                 {
                     "command": "workbench.action.togglePanel",
