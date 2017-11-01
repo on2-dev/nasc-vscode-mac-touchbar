@@ -2,7 +2,7 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
@@ -31,7 +31,6 @@
         "definitionProvider": "true"
     },
     "contributes": {
-        
         "commands": [
             {
                 "command": "nasc.touchBar.goToDefinition",
@@ -160,7 +159,7 @@
     "icon": "nasc-macbook-pro-vscode-touch-bar.jpg",
     "dependencies": {
         "vscode-languageclient": "0.10.x"
-    },    
+    },
     "devDependencies": {
         "typescript": "^2.5.2",
         "vscode": "^1.1.5",

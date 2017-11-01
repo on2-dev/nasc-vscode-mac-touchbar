@@ -1,11 +1,5 @@
 const vscode = require('vscode');
 const GO_MODE = { language: 'js', scheme: 'file' };
-// import { LanguageClient, LanguageClientOptions, SettingMonitor, ServerOptions } from 'vscode-languageclient';
-// import { vscode, workspace } from 'vscode';
-
-// Workspace.getConfiguration('eslint', textDocument.uri);
-// Workspace.getConfiguration('eslint',folder.uri).get('enabled', true)
-// Workspace.getConfiguration('eslint', folder.uri).update('enable', false)
 
 class GoDefinitionProvider {
     provideDefinition () {
