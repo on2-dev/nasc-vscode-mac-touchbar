@@ -80,12 +80,12 @@
                 {
                     "command": "nasc.touchBar.addCursorAbove",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.addCursor"
+                    "when": "config.nasc-touchbar.addCursorAbove"
                 },
                 {
                     "command": "nasc.touchBar.addCursorBellow",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.addCursor"
+                    "when": "config.nasc-touchbar.addCursorBellow"
                 },
                 {
                     "command": "workbench.action.toggleSidebarVisibility",
@@ -119,14 +119,19 @@
                         "default": true,
                         "description": "Go to Definition"
                     },
-                    "nasc-touchbar.addCursor": {
+                    "nasc-touchbar.addCursorAbove": {
                         "type": "boolean",
                         "default": false,
-                        "description": "Add cursor above and below"
+                        "description": "Add cursor above"
+                    },
+                    "nasc-touchbar.addCursorBellow": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Add cursor bellow"
                     },
                     "nasc-touchbar.toggleSidebar": {
                         "type": "boolean",
-                        "default": false,
+                        "default": true,
                         "description": "Toggle Sidebar"
                     },
                     "nasc-touchbar.togglePanel": {
@@ -138,6 +143,11 @@
                         "type": "boolean",
                         "default": true,
                         "description": "Show Commands"
+                    },
+                    "nasc-touchbar.rename": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Rename file"
                     }
                 }
             }
