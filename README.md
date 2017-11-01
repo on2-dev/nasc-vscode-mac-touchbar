@@ -21,12 +21,12 @@ The list of features are:
 ## Settings
 
 You can choose the buttons by setting the following settings.  
-Please have in mind the limit of 6 active buttons. More than that will break the layout and the buttons will not be visible.
+Please have in mind the limit of 6 active buttons (if you have the OS controll strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
 
-- "nasc-touchbar.goToDefinition": (default true) Go to the function or variable definition
-- "nasc-touchbar.addCursorAbove": (default false) Add a cursor in the line above
-- "nasc-touchbar.addCursorBellow": (default true) Add a cursor in the line bellow
-- "nasc-touchbar.toggleSidebar": (default false) Toggles the sidebar
-- "nasc-touchbar.togglePanel": (default true) Toggles the panel in the bottom of the editor
-- "nasc-touchbar.showCommands": (default true) Shows the _run command_ prompt
-- "nasc-touchbar.rename": (default true) Rename (replace all) variable or function names
+- "nasc-touchbar.goToDefinition": (default _true_) Go to the function or variable definition
+- "nasc-touchbar.addCursorAbove": (default _false_) Add a cursor in the line above
+- "nasc-touchbar.addCursorBellow": (default _true_) Add a cursor in the line bellow
+- "nasc-touchbar.toggleSidebar": (default _false_) Toggles the sidebar
+- "nasc-touchbar.togglePanel": (default _true_) Toggles the panel in the bottom of the editor
+- "nasc-touchbar.showCommands": (default _true_) Shows the _run command_ prompt
+- "nasc-touchbar.rename": (default _true_) Rename (replace all) variable or function names
