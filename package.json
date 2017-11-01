@@ -146,7 +146,7 @@
                     "nasc-touchbar.rename": {
                         "type": "boolean",
                         "default": true,
-                        "description": "Rename file"
+                        "description": "Rename Symbol"
                     }
                 }
             }
