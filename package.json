@@ -89,7 +89,8 @@
                 },
                 {
                     "command": "editor.action.rename",
-                    "group": "nasc"
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.rename"
                 },
                 {
                     "command": "workbench.action.togglePanel",
