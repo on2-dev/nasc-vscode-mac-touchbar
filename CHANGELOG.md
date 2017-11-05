@@ -1,7 +1,30 @@
 # Change Log
 All notable changes to the "nasc-touchbar" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## IMPORTANT NOTE:
+Important, if the buttons don't fit in the bar, they will not be shown (this is a current bug in VSCode support for the TouchBar and soon to be fixed).  
+If the bar disappeared, see the options (ctrl+, or cmd+,), filter by "nasc" e adjust the settings.
 
-## [Unreleased]
-- Initial release
+Usually, if your are not using the "Strip" group of buttons, you can fit **9** buttons on it. If you have the OS's _Strip_ buttons enabled, you can fit **6** buttons.
+
+## 1.0
+
+- Support for _goToDefinition_
+- Support for _addCursorAbove_
+- Support for _addCursorBellow_
+- Support for _toggleSidebar_
+- Support for _togglePanel_
+- Support for _showCommands_
+
+## 1.2.0
+
+- Support for _renaming symbols_
+
+## 1.5.0
+
+- Added support for enabling and disabling buttons in user settings
+
+## 1.6.1
+
+- Added support for "goToNext"
+- Added support for "duplicateLine"

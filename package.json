@@ -2,7 +2,7 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "1.5.2",
+    "version": "1.6.0",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
@@ -144,43 +144,53 @@
                 "type": "object",
                 "properties": {
                     "nasc-touchbar.goToDefinition": {
-                        "type": "boolean", "default": true,
+                        "type": "boolean",
+                        "default": true,
                         "description": "Go to Definition"
                     },
                     "nasc-touchbar.addCursorBellow": {
-                        "type": "boolean", "default": true,
+                        "type": "boolean",
+                        "default": true,
                         "description": "Add cursor bellow"
                     },
                     "nasc-touchbar.rename": {
-                        "type": "boolean", "default": true,
+                        "type": "boolean",
+                        "default": true,
                         "description": "Rename Symbol. It will replace the variable or function name (for example) everywhere"
                     },
                     "nasc-touchbar.togglePanel": {
-                        "type": "boolean", "default": true,
+                        "type": "boolean",
+                        "default": true,
                         "description": "Toggle Panel"
                     },
                     "nasc-touchbar.showCommands": {
-                        "type": "boolean", "default": true,
+                        "type": "boolean",
+                        "default": true,
                         "description": "Show Commands"
                     },
                     "nasc-touchbar.selectNext": {
-                        "type": "boolean", "default": true,
+                        "type": "boolean",
+                        "default": true,
                         "description": "Select the next matching string (if a word is selected, uses this to search)"
                     },
                     "nasc-touchbar.toggleSidebar": {
-                        "type": "boolean", "default": false,
+                        "type": "boolean",
+                        "default": false,
                         "description": "Toggle Sidebar"
                     },
                     "nasc-touchbar.addCursorAbove": {
-                        "type": "boolean", "default": false,
+                        "type": "boolean",
+                        "default": false,
                         "description": "Add cursor above"
                     },
                     "nasc-touchbar.copyLineDown": {
-                        "type": "boolean", "default": false,
+                        "type": "boolean",
+                        "default": false,
                         "description": "Copy the current line bellow"
                     },
                     "nasc-touchbar.goToNext": {
-                        "type": "boolean", "default": false,
+                        "type": "boolean",
+                        "default": false,
                         "description": "Go to the next match (if a word is selected, uses this to search)"
                     }
                 }
