@@ -72,6 +72,16 @@
                 "command": "editor.action.copyLinesDownAction",
                 "group": "nasc",
                 "title": "D↓"
+            },
+            {
+                "command": "editor.action.addSelectionToNextFindMatch",
+                "group": "nasc",
+                "title": "🔎+"
+            },
+            {
+                "command": "editor.action.moveSelectionToNextFindMatch",
+                "group": "nasc",
+                "title": "🔎"
             }
         ],
         "menus": {
@@ -115,6 +125,16 @@
                     "command": "editor.action.copyLinesDownAction",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.copyLineDown"
+                },
+                {
+                    "command": "editor.action.addSelectionToNextFindMatch",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.goToNext"
+                },
+                {
+                    "command": "editor.action.moveSelectionToNextFindMatch",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.selectNext"
                 }
             ]
         },
@@ -124,44 +144,44 @@
                 "type": "object",
                 "properties": {
                     "nasc-touchbar.goToDefinition": {
-                        "type": "boolean",
-                        "default": true,
+                        "type": "boolean", "default": true,
                         "description": "Go to Definition"
                     },
-                    "nasc-touchbar.addCursorAbove": {
-                        "type": "boolean",
-                        "default": false,
-                        "description": "Add cursor above"
-                    },
                     "nasc-touchbar.addCursorBellow": {
-                        "type": "boolean",
-                        "default": true,
+                        "type": "boolean", "default": true,
                         "description": "Add cursor bellow"
                     },
-                    "nasc-touchbar.toggleSidebar": {
-                        "type": "boolean",
-                        "default": true,
-                        "description": "Toggle Sidebar"
+                    "nasc-touchbar.rename": {
+                        "type": "boolean", "default": true,
+                        "description": "Rename Symbol. It will replace the variable or function name (for example) everywhere"
                     },
                     "nasc-touchbar.togglePanel": {
-                        "type": "boolean",
-                        "default": true,
+                        "type": "boolean", "default": true,
                         "description": "Toggle Panel"
                     },
                     "nasc-touchbar.showCommands": {
-                        "type": "boolean",
-                        "default": true,
+                        "type": "boolean", "default": true,
                         "description": "Show Commands"
                     },
-                    "nasc-touchbar.rename": {
-                        "type": "boolean",
-                        "default": true,
-                        "description": "Rename Symbol"
+                    "nasc-touchbar.selectNext": {
+                        "type": "boolean", "default": true,
+                        "description": "Select the next matching string (if a word is selected, uses this to search)"
+                    },
+                    "nasc-touchbar.toggleSidebar": {
+                        "type": "boolean", "default": false,
+                        "description": "Toggle Sidebar"
+                    },
+                    "nasc-touchbar.addCursorAbove": {
+                        "type": "boolean", "default": false,
+                        "description": "Add cursor above"
                     },
                     "nasc-touchbar.copyLineDown": {
-                        "type": "boolean",
-                        "default": false,
+                        "type": "boolean", "default": false,
                         "description": "Copy the current line bellow"
+                    },
+                    "nasc-touchbar.goToNext": {
+                        "type": "boolean", "default": false,
+                        "description": "Go to the next match (if a word is selected, uses this to search)"
                     }
                 }
             }
