@@ -2,7 +2,7 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
@@ -67,6 +67,11 @@
                 "command": "editor.action.rename",
                 "group": "nasc",
                 "title": "✎_"
+            },
+            {
+                "command": "editor.action.copyLinesDownAction",
+                "group": "nasc",
+                "title": "D↓"
             }
         ],
         "menus": {
@@ -105,6 +110,11 @@
                     "command": "workbench.action.showCommands",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.showCommands"
+                },
+                {
+                    "command": "editor.action.copyLinesDownAction",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.copyLineDown"
                 }
             ]
         },
@@ -147,6 +157,11 @@
                         "type": "boolean",
                         "default": true,
                         "description": "Rename Symbol"
+                    },
+                    "nasc-touchbar.copyLineDown": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Copy the current line bellow"
                     }
                 }
             }

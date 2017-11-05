@@ -17,6 +17,7 @@ The list of features are:
 - Toggle side bar
 - Toggle Pannel/terminal
 - Rename/replace all
+- Duplicate lines
 
 ## Settings
 
@@ -30,3 +31,4 @@ Please have in mind the limit of 6 active buttons (if you have the OS controll s
 - "nasc-touchbar.togglePanel": (default _true_) Toggles the panel in the bottom of the editor
 - "nasc-touchbar.showCommands": (default _true_) Shows the _run command_ prompt
 - "nasc-touchbar.rename": (default _true_) Rename (replace all) variable or function names
+- "nasc-touchbar.copyLineDown": (default _false_) Duplicates the current line (or selected lines) 
