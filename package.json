@@ -102,6 +102,16 @@
                 "command": "workbench.action.openGlobalSettings",
                 "group": "nasc",
                 "title": "⚙"
+            },
+            {
+                "command": "editor.action.indentLines",
+                "group": "nasc",
+                "title": "→☰"
+            },
+            {
+                "command": "editor.action.outdentLines",
+                "group": "nasc",
+                "title": "←☰"
             }
         ],
         "menus": {
@@ -175,6 +185,16 @@
                     "command": "workbench.action.openGlobalSettings",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.settings"
+                },
+                {
+                    "command": "editor.action.indentLines",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.indent"
+                },
+                {
+                    "command": "editor.action.outdentLines",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.outdent"
                 }
             ]
         },
@@ -252,6 +272,16 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Open user settings"
+                    },
+                    "nasc-touchbar.indent": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Indent text"
+                    },
+                    "nasc-touchbar.outdent": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Outdent text"
                     }
                 }
             }
