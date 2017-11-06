@@ -15,13 +15,13 @@ The list of features are:
 - Add cursor below
 - Run command
 - Toggle side bar
-- Toggle Pannel/terminal
+- Toggle Panel/terminal
 - Rename/replace all
 
 ## Settings
 
 You can choose the buttons by setting the following settings.  
-Please have in mind the limit of 6 active buttons (if you have the OS controll strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
+Please have in mind the limit of 6 active buttons (if you have the OS control strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
 
 - "nasc-touchbar.goToDefinition": (default _true_) Go to the function or variable definition
 - "nasc-touchbar.addCursorAbove": (default _false_) Add a cursor in the line above
