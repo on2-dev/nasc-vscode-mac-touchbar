@@ -117,6 +117,16 @@
                 "command": "editor.action.jumpToBracket",
                 "group": "nasc",
                 "title": "→}"
+            },
+            {
+                "command": "editor.action.blockComment",
+                "group": "nasc",
+                "title": "/* */"
+            },
+            {
+                "command": "editor.action.commentLine",
+                "group": "nasc",
+                "title": "//"
             }
         ],
         "menus": {
@@ -205,6 +215,16 @@
                     "command": "editor.action.jumpToBracket",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.jumpToBracket"
+                },
+                {
+                    "command": "editor.action.blockComment",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.blockComment"
+                },
+                {
+                    "command": "editor.action.commentLine",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.commentLine"
                 }
             ]
         },
@@ -297,6 +317,16 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Jump to matching bracket"
+                    },
+                    "nasc-touchbar.blockComment": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Toggles block comments ( /* ... */ ) for the current selection"
+                    },
+                    "nasc-touchbar.commentLine": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Toggles line comments ( // ) for the current selection"
                     }
                 }
             }
