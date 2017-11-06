@@ -56,6 +56,39 @@ Please have in mind the limit of 6 active buttons (if you have the OS controll s
 - "nasc-touchbar.blockComment": (default _false_) Toggles block comments ( /* ... */ ) for the current selection
 - "nasc-touchbar.commentLine": (default _false_) Toggles line comments ( // ) for the current selection
 
+## Groups
+
+Functions
+    - Close group
+    - Go to definition
+    - Peek definition
+    - Show references
+    - Rename/replace all
+    - Jump to matching bracket
+Source
+    - Close group
+    - Duplicate lines
+    - Indent
+    - Outdent
+    - Block comment
+    - Comment line
+
+Cursors
+    - Close group
+    - Select next
+    - Go to next
+    - Add cursor above
+    - Add cursor bellow
+
+Editor
+    - Close group
+    - Run command
+    - Toggle side bar
+    - Toggle Pannel/terminal
+    - Togle white space characters
+    - Settings
+
+
 ## NOTES:
 
 Important, if the buttons don't fit in the bar, they will not be shown (this is a current bug in VSCode support for the TouchBar and soon to be fixed).  
