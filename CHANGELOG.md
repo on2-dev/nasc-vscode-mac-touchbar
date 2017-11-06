@@ -28,3 +28,15 @@ Usually, if your are not using the "Strip" group of buttons, you can fit **9** b
 
 - Added support for "goToNext"
 - Added support for "duplicateLine"
+
+## 1.7.0
+
+- Togle white space characters
+- Peek definition
+- Show references
+- Settings
+- Indent
+- Outdent
+- Jump to matching bracket
+- Block comment
+- Comment line

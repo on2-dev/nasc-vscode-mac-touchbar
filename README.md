@@ -1,6 +1,7 @@
 # Nasc's Macbook Pro Touch Bar features for VSCode
 
 This adds a few useful features to your Macbook Pro's touch bar while you are working in VSCode.
+**Read the notes in the end of this document**
 
 ## Features
 
@@ -18,6 +19,15 @@ The list of features are:
 - Toggle Pannel/terminal
 - Rename/replace all
 - Duplicate lines
+- Togle white space characters
+- Peek definition
+- Show references
+- Settings
+- Indent
+- Outdent
+- Jump to matching bracket
+- Block comment
+- Comment line
 
 ## Settings
 
@@ -34,6 +44,15 @@ Please have in mind the limit of 6 active buttons (if you have the OS controll s
 - "nasc-touchbar.rename": (default _true_) Rename (replace all) variable or function names
 - "nasc-touchbar.copyLineDown": (default _false_) Duplicates the current line (or selected lines) 
 - "nasc-touchbar.goToNext": (default _false_) Go to next match
+- "nasc-touchbar.togleWhiteSpace": (default _false_) Show or hide white spaces
+- "nasc-touchbar.peekDefinition": (default _false_) Peek definition/declaration
+- "nasc-touchbar.showReferences": (default _false_) List references who use the current symbol
+- "nasc-touchbar.settings": (default _false_) Open user settings
+- "nasc-touchbar.indent": (default _false_) Indent text
+- "nasc-touchbar.outdent": (default _false_) Outdent text
+- "nasc-touchbar.jumpToBracket": (default _false_) Jump to matching bracket
+- "nasc-touchbar.blockComment": (default _false_) Toggles block comments ( /* ... */ ) for the current selection
+- "nasc-touchbar.commentLine": (default _false_) Toggles line comments ( // ) for the current selection
 
 ## NOTES:
 
