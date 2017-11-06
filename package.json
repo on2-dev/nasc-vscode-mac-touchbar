@@ -92,6 +92,11 @@
                 "command": "editor.action.previewDeclaration",
                 "group": "nasc",
                 "title": "ƒ ["
+            },
+            {
+                "command": "editor.action.referenceSearch.trigger",
+                "group": "nasc",
+                "title": "ƒ⥺"
             }
         ],
         "menus": {
@@ -155,6 +160,11 @@
                     "command": "editor.action.previewDeclaration",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.peekDefinition"
+                },
+                {
+                    "command": "editor.action.referenceSearch.trigger",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.showReferences"
                 }
             ]
         },
@@ -222,6 +232,11 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Peek definition/declaration"
+                    },
+                    "nasc-touchbar.showReferences": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "List references who use the current symbol"
                     }
                 }
             }
