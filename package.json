@@ -112,6 +112,11 @@
                 "command": "editor.action.outdentLines",
                 "group": "nasc",
                 "title": "←☰"
+            },
+            {
+                "command": "editor.action.jumpToBracket",
+                "group": "nasc",
+                "title": "→}"
             }
         ],
         "menus": {
@@ -195,6 +200,11 @@
                     "command": "editor.action.outdentLines",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.outdent"
+                },
+                {
+                    "command": "editor.action.jumpToBracket",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.jumpToBracket"
                 }
             ]
         },
@@ -282,6 +292,11 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Outdent text"
+                    },
+                    "nasc-touchbar.jumpToBracket": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Jump to matching bracket"
                     }
                 }
             }
