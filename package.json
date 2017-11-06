@@ -97,6 +97,11 @@
                 "command": "editor.action.referenceSearch.trigger",
                 "group": "nasc",
                 "title": "ƒ⥺"
+            },
+            {
+                "command": "workbench.action.openGlobalSettings",
+                "group": "nasc",
+                "title": "⚙"
             }
         ],
         "menus": {
@@ -165,6 +170,11 @@
                     "command": "editor.action.referenceSearch.trigger",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.showReferences"
+                },
+                {
+                    "command": "workbench.action.openGlobalSettings",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.settings"
                 }
             ]
         },
@@ -237,6 +247,11 @@
                         "type": "boolean",
                         "default": false,
                         "description": "List references who use the current symbol"
+                    },
+                    "nasc-touchbar.settings": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Open user settings"
                     }
                 }
             }
