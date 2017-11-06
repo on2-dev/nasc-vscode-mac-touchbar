@@ -2,7 +2,7 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
@@ -82,6 +82,16 @@
                 "command": "editor.action.moveSelectionToNextFindMatch",
                 "group": "nasc",
                 "title": "🔎"
+            },
+            {
+                "command": "editor.action.toggleRenderWhitespace",
+                "group": "nasc",
+                "title": "a..b"
+            },
+            {
+                "command": "editor.action.previewDeclaration",
+                "group": "nasc",
+                "title": "ƒ ["
             }
         ],
         "menus": {
@@ -129,12 +139,22 @@
                 {
                     "command": "editor.action.addSelectionToNextFindMatch",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.goToNext"
+                    "when": "config.nasc-touchbar.selectNext"
                 },
                 {
                     "command": "editor.action.moveSelectionToNextFindMatch",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.selectNext"
+                    "when": "config.nasc-touchbar.goToNext"
+                },
+                {
+                    "command": "editor.action.toggleRenderWhitespace",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.togleWhiteSpace"
+                },
+                {
+                    "command": "editor.action.previewDeclaration",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.peekDefinition"
                 }
             ]
         },
@@ -192,6 +212,16 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Go to the next match (if a word is selected, uses this to search)"
+                    },
+                    "nasc-touchbar.togleWhiteSpace": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Show or hide white spaces"
+                    },
+                    "nasc-touchbar.peekDefinition": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Peek definition/declaration"
                     }
                 }
             }
