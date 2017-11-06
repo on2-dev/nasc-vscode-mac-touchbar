@@ -12,7 +12,7 @@ The list of features are:
 
 - Go to definition
 - Add cursor above
-- Add cursor bellow
+- Add cursor below
 - Run command
 - Toggle side bar
 - Toggle Pannel/terminal
@@ -25,7 +25,7 @@ Please have in mind the limit of 6 active buttons (if you have the OS controll s
 
 - "nasc-touchbar.goToDefinition": (default _true_) Go to the function or variable definition
 - "nasc-touchbar.addCursorAbove": (default _false_) Add a cursor in the line above
-- "nasc-touchbar.addCursorBellow": (default _true_) Add a cursor in the line bellow
+- "nasc-touchbar.addCursorBelow": (default _true_) Add a cursor in the line below
 - "nasc-touchbar.toggleSidebar": (default _false_) Toggles the sidebar
 - "nasc-touchbar.togglePanel": (default _true_) Toggles the panel in the bottom of the editor
 - "nasc-touchbar.showCommands": (default _true_) Shows the _run command_ prompt

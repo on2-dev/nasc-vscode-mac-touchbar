@@ -24,7 +24,7 @@
     "activationEvents": [
         "onCommand:nasc.touchBar.goToDefinition",
         "onCommand:nasc.touchBar.addCursorAbove",
-        "onCommand:nasc.touchBar.addCursorBellow"
+        "onCommand:nasc.touchBar.addCursorBelow"
     ],
     "main": "./extension",
     "capabilities": {
@@ -44,7 +44,7 @@
                 "title": "↑𝙸"
             },
             {
-                "command": "nasc.touchBar.addCursorBellow",
+                "command": "nasc.touchBar.addCursorBelow",
                 "group": "nasc",
                 "title": "↓𝙸"
             },
@@ -82,9 +82,9 @@
                     "when": "config.nasc-touchbar.addCursorAbove"
                 },
                 {
-                    "command": "nasc.touchBar.addCursorBellow",
+                    "command": "nasc.touchBar.addCursorBelow",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.addCursorBellow"
+                    "when": "config.nasc-touchbar.addCursorBelow"
                 },
                 {
                     "command": "workbench.action.toggleSidebarVisibility",
@@ -123,10 +123,10 @@
                         "default": false,
                         "description": "Add cursor above"
                     },
-                    "nasc-touchbar.addCursorBellow": {
+                    "nasc-touchbar.addCursorBelow": {
                         "type": "boolean",
                         "default": true,
-                        "description": "Add cursor bellow"
+                        "description": "Add cursor below"
                     },
                     "nasc-touchbar.toggleSidebar": {
                         "type": "boolean",

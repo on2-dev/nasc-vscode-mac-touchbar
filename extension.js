@@ -34,7 +34,7 @@ function addCursor (direction) {
     var position = editor.selection.active;
     var selections = editor.selections
     var selection
-    
+
     if (selections.length > 1) {
         selections = selections.sort((a, b) => {
             return a.start.line > b.start.line
@@ -55,7 +55,7 @@ function addCursor (direction) {
         let tabs = countTabs(selection)
         let tabs2 = countTabs(newSelection)
         let diff = (tabs - tabs2)
-        
+
         if (Math.abs(diff) > 0) {
             diff = diff * editor.options.tabSize - diff
         }
@@ -72,8 +72,8 @@ function activate(context) {
     const aCA = vscode.commands.registerCommand('nasc.touchBar.addCursorAbove', function () {
         addCursor('above')
     })
-    const aCB = vscode.commands.registerCommand('nasc.touchBar.addCursorBellow', function () {
-        addCursor('bellow')
+    const aCB = vscode.commands.registerCommand('nasc.touchBar.addCursorBelow', function () {
+        addCursor('below')
     })
 
     vscode.commands.registerCommand('nasc.touchBar.goToDefinition', function () {
@@ -82,10 +82,10 @@ function activate(context) {
         if (!editor) {
             return; // No open text editor
         }
-        
+
         var position = editor.selection.active;
 
-        vscode.commands.executeCommand('vscode.executeDefinitionProvider', 
+        vscode.commands.executeCommand('vscode.executeDefinitionProvider',
             editor.document.uri,
             position
         ).then(result => {
