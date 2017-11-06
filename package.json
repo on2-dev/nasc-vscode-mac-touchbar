@@ -2,7 +2,7 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
@@ -127,10 +127,57 @@
                 "command": "editor.action.commentLine",
                 "group": "nasc",
                 "title": "//"
+            },
+
+
+            {
+                "command": "editor.action.commentLine",
+                "group": "nasc",
+                "title": "Functions"
+            },
+            {
+                "command": "editor.action.commentLine",
+                "group": "nasc",
+                "title": "Source"
+            },
+            {
+                "command": "editor.action.commentLine",
+                "group": "nasc",
+                "title": "Cursors"
+            },
+            {
+                "command": "editor.action.commentLine",
+                "group": "nasc",
+                "title": "Editor"
             }
         ],
         "menus": {
             "touchBar": [
+                {
+                    "command": "editor.action.commentLine",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.goToDefinition"
+                },
+                {
+                    "command": "editor.action.commentLine",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.goToDefinition"
+                },
+                {
+                    "command": "editor.action.commentLine",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.goToDefinition"
+                },
+                {
+                    "command": "editor.action.commentLine",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.goToDefinition"
+                },
+
+
+                
+
+
                 {
                     "command": "nasc.touchBar.goToDefinition",
                     "group": "nasc",
@@ -233,6 +280,11 @@
                 "title": "Something",
                 "type": "object",
                 "properties": {
+                    "nasc-touchbar.groupButtons": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable groups of buttons"
+                    },
                     "nasc-touchbar.goToDefinition": {
                         "type": "boolean",
                         "default": true,

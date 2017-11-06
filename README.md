@@ -28,6 +28,8 @@ The list of features are:
 - Jump to matching bracket
 - Block comment
 - Comment line
+- Select next
+- Go to next
 
 ## Settings
 
