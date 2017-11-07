@@ -9,6 +9,12 @@ This is how your touchbar will look like:
 
 ![Touchbar visualization](nasc-macbook-pro-vscode-touch-bar.jpg)
 
+![Touchbar visualization](images/editor-group.png)
+![Touchbar visualization](images/functions-group.png)
+![Touchbar visualization](images/source-group.png)
+![Touchbar visualization](images/cursors-group.png)
+![Touchbar visualization](images/tools-groups.png)
+
 The list of features are:
 
 - Go to definition
