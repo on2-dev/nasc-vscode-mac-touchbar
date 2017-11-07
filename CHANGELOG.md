@@ -40,3 +40,11 @@ Usually, if your are not using the "Strip" group of buttons, you can fit **9** b
 - Jump to matching bracket
 - Block comment
 - Comment line
+
+## 1.8.0
+
+- Added support for groups of tools
+- Supporting group _enableFuncGroup_
+- Supporting group _enableSrcGroup_
+- Supporting group _enableCursorsGroup_
+- Supporting group _enableEditorGroup_

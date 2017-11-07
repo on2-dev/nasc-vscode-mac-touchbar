@@ -55,17 +55,27 @@ Please have in mind the limit of 6 active buttons (if you have the OS controll s
 - "nasc-touchbar.jumpToBracket": (default _false_) Jump to matching bracket
 - "nasc-touchbar.blockComment": (default _false_) Toggles block comments ( /* ... */ ) for the current selection
 - "nasc-touchbar.commentLine": (default _false_) Toggles line comments ( // ) for the current selection
+- "nasc-touchbar.enableFuncGroup": (default _false_) Adds a group with the buttons related to _Functions_
+- "nasc-touchbar.enableSrcGroup": (default _false_)  Adds a group with the buttons related to the _Source code_
+- "nasc-touchbar.enableCursorsGroup": (default _false_)  Adds a group with the buttons related to your _cursors_
+- "nasc-touchbar.enableEditorGroup": (default _false_)  Adds a group with the buttons related to _editor's tools_
 
 ## Groups
 
+When you enable groups, each group has a bunch of features.  
+Here they are:
+
 Functions
+
     - Close group
     - Go to definition
     - Peek definition
     - Show references
     - Rename/replace all
     - Jump to matching bracket
+
 Source
+
     - Close group
     - Duplicate lines
     - Indent
@@ -74,6 +84,7 @@ Source
     - Comment line
 
 Cursors
+
     - Close group
     - Select next
     - Go to next
@@ -81,6 +92,7 @@ Cursors
     - Add cursor bellow
 
 Editor
+
     - Close group
     - Run command
     - Toggle side bar

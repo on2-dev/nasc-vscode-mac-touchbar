@@ -76,9 +76,37 @@ function activate(context) {
         addCursor('bellow')
     })
 
+    vscode.commands.registerCommand('nasc.touchBar.closeGroup', function () {
+        vscode.commands.executeCommand('setContext', 'enabledGroup', false)
+        vscode.commands.executeCommand('setContext', 'enabledFuncGroup', false)
+        vscode.commands.executeCommand('setContext', 'enabledSrcGroup', false)
+        vscode.commands.executeCommand('setContext', 'enabledEditorGroup', false)
+        vscode.commands.executeCommand('setContext', 'enabledCursorsGroup', false)
+        // vscode.workspace.getConfiguration().update('nasc-touchbar.enabledGroup', 0)
+    })
+    vscode.commands.registerCommand('nasc.touchBar.enableFuncGroup', function () {
+        vscode.commands.executeCommand('setContext', 'enabledGroup', true)
+        vscode.commands.executeCommand('setContext', 'enabledFuncGroup', true)
+        // vscode.workspace.getConfiguration().update('nasc-touchbar.enabledGroup', 1)
+    })
+    vscode.commands.registerCommand('nasc.touchBar.enableSrcGroup', function () {
+        vscode.commands.executeCommand('setContext', 'enabledGroup', true)
+        vscode.commands.executeCommand('setContext', 'enabledSrcGroup', true)
+        // vscode.workspace.getConfiguration().update('nasc-touchbar.enabledGroup', 2)
+    })
+    vscode.commands.registerCommand('nasc.touchBar.enableEditorGroup', function () {
+        vscode.commands.executeCommand('setContext', 'enabledGroup', true)
+        vscode.commands.executeCommand('setContext', 'enabledEditorGroup', true)
+        // vscode.workspace.getConfiguration().update('nasc-touchbar.enabledGroup', 3)
+    })
+    vscode.commands.registerCommand('nasc.touchBar.enableCursorsGroup', function () {
+        vscode.commands.executeCommand('setContext', 'enabledGroup', true)
+        vscode.commands.executeCommand('setContext', 'enabledCursorsGroup', true)
+        // vscode.workspace.getConfiguration().update('nasc-touchbar.enabledGroup', 4)
+    })
+
     vscode.commands.registerCommand('nasc.touchBar.goToDefinition', function () {
         var editor = vscode.window.activeTextEditor;
-        // debugger
         if (!editor) {
             return; // No open text editor
         }
@@ -115,12 +143,13 @@ function activate(context) {
         GO_MODE, go2Def
     )
     context.subscriptions.push(aCA)
-    context.subscriptions.push(
-        prov
-    );
+    context.subscriptions.push(aCB)
+    // context.subscriptions.push(eFG)
+    context.subscriptions.push(prov);
 }
 exports.activate = activate;
 
 function deactivate() {
 }
+
 exports.deactivate = deactivate;
