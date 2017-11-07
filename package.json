@@ -2,7 +2,7 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "1.7.1",
+    "version": "1.8.0",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
@@ -132,8 +132,6 @@
                 "group": "nasc",
                 "title": "//"
             },
-
-
             {
                 "command": "nasc.touchBar.enableFuncGroup",
                 "group": "nasc",
@@ -187,132 +185,196 @@
                     "group": "nasc",
                     "when": "enabledGroup"
                 },
-                
-                
-                
-                
                 {
                     "command": "nasc.touchBar.goToDefinition",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.goToDefinition && !enabledGroup"
                 },
-                {"command": "nasc.touchBar.goToDefinition", "group": "nasc", "when": "enabledFuncGroup"},
+                {
+                    "command": "nasc.touchBar.goToDefinition",
+                    "group": "nasc",
+                    "when": "enabledFuncGroup"
+                },
                 {
                     "command": "editor.action.rename",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.rename && !enabledGroup"
                 },
-                { "command": "editor.action.rename", "group": "nasc", "when": "enabledFuncGroup" },
+                {
+                    "command": "editor.action.rename",
+                    "group": "nasc",
+                    "when": "enabledFuncGroup"
+                },
                 {
                     "command": "editor.action.previewDeclaration",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.peekDefinition && !enabledGroup"
                 },
-                { "command": "editor.action.previewDeclaration", "group": "nasc", "when": "enabledFuncGroup" },
+                {
+                    "command": "editor.action.previewDeclaration",
+                    "group": "nasc",
+                    "when": "enabledFuncGroup"
+                },
                 {
                     "command": "editor.action.referenceSearch.trigger",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.showReferences && !enabledGroup"
                 },
-                { "command": "editor.action.referenceSearch.trigger", "group": "nasc", "when": "enabledFuncGroup" },
+                {
+                    "command": "editor.action.referenceSearch.trigger",
+                    "group": "nasc",
+                    "when": "enabledFuncGroup"
+                },
                 {
                     "command": "editor.action.jumpToBracket",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.jumpToBracket && !enabledGroup"
                 },
-                { "command": "editor.action.jumpToBracket", "group": "nasc", "when": "enabledFuncGroup" },
-
-
-
+                {
+                    "command": "editor.action.jumpToBracket",
+                    "group": "nasc",
+                    "when": "enabledFuncGroup"
+                },
                 {
                     "command": "nasc.touchBar.addCursorAbove",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.addCursorAbove"
                 },
-                { "command": "nasc.touchBar.addCursorAbove", "group": "nasc", "when": "enabledCursorsGroup" },
+                {
+                    "command": "nasc.touchBar.addCursorAbove",
+                    "group": "nasc",
+                    "when": "enabledCursorsGroup"
+                },
                 {
                     "command": "nasc.touchBar.addCursorBellow",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.addCursorBellow && !enabledGroup"
                 },
-                { "command": "nasc.touchBar.addCursorBellow", "group": "nasc", "when": "enabledCursorsGroup" },
+                {
+                    "command": "nasc.touchBar.addCursorBellow",
+                    "group": "nasc",
+                    "when": "enabledCursorsGroup"
+                },
                 {
                     "command": "editor.action.addSelectionToNextFindMatch",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.selectNext && !enabledGroup"
                 },
-                { "command": "editor.action.addSelectionToNextFindMatch", "group": "nasc", "when": "enabledCursorsGroup" },
+                {
+                    "command": "editor.action.addSelectionToNextFindMatch",
+                    "group": "nasc",
+                    "when": "enabledCursorsGroup"
+                },
                 {
                     "command": "editor.action.moveSelectionToNextFindMatch",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.goToNext && !enabledGroup"
                 },
-                { "command": "editor.action.moveSelectionToNextFindMatch", "group": "nasc", "when": "enabledCursorsGroup" },
-                
-
-
+                {
+                    "command": "editor.action.moveSelectionToNextFindMatch",
+                    "group": "nasc",
+                    "when": "enabledCursorsGroup"
+                },
                 {
                     "command": "workbench.action.toggleSidebarVisibility",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.toggleSidebar && !enabledGroup"
                 },
-                { "command": "workbench.action.toggleSidebarVisibility", "group": "nasc", "when": "enabledEditorGroup" },
+                {
+                    "command": "workbench.action.toggleSidebarVisibility",
+                    "group": "nasc",
+                    "when": "enabledEditorGroup"
+                },
                 {
                     "command": "workbench.action.togglePanel",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.togglePanel && !enabledGroup"
                 },
-                { "command": "workbench.action.togglePanel", "group": "nasc", "when": "enabledEditorGroup" },
+                {
+                    "command": "workbench.action.togglePanel",
+                    "group": "nasc",
+                    "when": "enabledEditorGroup"
+                },
                 {
                     "command": "workbench.action.showCommands",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.showCommands && !enabledGroup"
                 },
-                { "command": "workbench.action.showCommands", "group": "nasc", "when": "enabledEditorGroup" },
+                {
+                    "command": "workbench.action.showCommands",
+                    "group": "nasc",
+                    "when": "enabledEditorGroup"
+                },
                 {
                     "command": "editor.action.toggleRenderWhitespace",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.togleWhiteSpace && !enabledGroup"
                 },
-                { "command": "editor.action.toggleRenderWhitespace", "group": "nasc", "when": "enabledEditorGroup" },
+                {
+                    "command": "editor.action.toggleRenderWhitespace",
+                    "group": "nasc",
+                    "when": "enabledEditorGroup"
+                },
                 {
                     "command": "workbench.action.openGlobalSettings",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.settings && !enabledGroup"
                 },
-                { "command": "workbench.action.openGlobalSettings", "group": "nasc", "when": "enabledEditorGroup" },
-
-
+                {
+                    "command": "workbench.action.openGlobalSettings",
+                    "group": "nasc",
+                    "when": "enabledEditorGroup"
+                },
                 {
                     "command": "editor.action.copyLinesDownAction",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.copyLineDown && !enabledGroup"
                 },
-                { "command": "editor.action.copyLinesDownAction", "group": "nasc", "when": "enabledSrcGroup" },
+                {
+                    "command": "editor.action.copyLinesDownAction",
+                    "group": "nasc",
+                    "when": "enabledSrcGroup"
+                },
                 {
                     "command": "editor.action.indentLines",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.indent && !enabledGroup"
                 },
-                { "command": "editor.action.indentLines", "group": "nasc", "when": "enabledSrcGroup" },
+                {
+                    "command": "editor.action.indentLines",
+                    "group": "nasc",
+                    "when": "enabledSrcGroup"
+                },
                 {
                     "command": "editor.action.outdentLines",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.outdent && !enabledGroup"
                 },
-                { "command": "editor.action.outdentLines", "group": "nasc", "when": "enabledSrcGroup" },
+                {
+                    "command": "editor.action.outdentLines",
+                    "group": "nasc",
+                    "when": "enabledSrcGroup"
+                },
                 {
                     "command": "editor.action.blockComment",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.blockComment && !enabledGroup"
                 },
-                { "command": "editor.action.blockComment", "group": "nasc", "when": "enabledSrcGroup" },
+                {
+                    "command": "editor.action.blockComment",
+                    "group": "nasc",
+                    "when": "enabledSrcGroup"
+                },
                 {
                     "command": "editor.action.commentLine",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.commentLine && !enabledGroup"
                 },
-                { "command": "editor.action.commentLine", "group": "nasc", "when": "enabledSrcGroup" }
+                {
+                    "command": "editor.action.commentLine",
+                    "group": "nasc",
+                    "when": "enabledSrcGroup"
+                }
             ]
         },
         "configuration": [
@@ -350,7 +412,6 @@
                         "default": true,
                         "description": "Select the next matching string (if a word is selected, uses this to search)"
                     },
-
                     "nasc-touchbar.enableFuncGroup": {
                         "type": "boolean",
                         "default": false,
@@ -371,8 +432,6 @@
                         "default": false,
                         "description": "Enables the Editor group"
                     },
-
-
                     "nasc-touchbar.toggleSidebar": {
                         "type": "boolean",
                         "default": false,
