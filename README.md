@@ -42,8 +42,6 @@ Please have in mind the limit of 6 active buttons (if you have the OS control st
 - "nasc-touchbar.togglePanel": (default _true_) Toggles the panel in the bottom of the editor
 - "nasc-touchbar.showCommands": (default _true_) Shows the _run command_ prompt
 - "nasc-touchbar.rename": (default _true_) Rename (replace all) variable or function names
-<<<<<<< HEAD
-=======
 - "nasc-touchbar.copyLineDown": (default _false_) Duplicates the current line (or selected lines) 
 - "nasc-touchbar.goToNext": (default _false_) Go to next match
 - "nasc-touchbar.toggleWhiteSpace": (default _false_) Show or hide white spaces
@@ -62,4 +60,3 @@ Important, if the buttons don't fit in the bar, they will not be shown (this is 
 If the bar disappeared, see the options (ctrl+, or cmd+,), filter by "nasc" e adjust the settings.
 
 Usually, if your are not using the "Strip" group of buttons, you can fit **9** buttons on it. If you have the OS's _Strip_ buttons enabled, you can fit **6** buttons.
->>>>>>> NascHQ/master
