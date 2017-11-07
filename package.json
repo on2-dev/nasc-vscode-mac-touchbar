@@ -1,8 +1,8 @@
 {
     "name": "nasc-touchbar",
-    "displayName": "Nasc VSCode Touchbar",
-    "description": "Adds useful tools to your Macbook touchbar.",
-    "version": "1.5.0",
+    "displayName": "Nasc VSCode Touch Bar",
+    "description": "Adds useful tools to your MacBook Touch Bar.",
+    "version": "1.7.0",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
@@ -67,6 +67,66 @@
                 "command": "editor.action.rename",
                 "group": "nasc",
                 "title": "✎_"
+            },
+            {
+                "command": "editor.action.copyLinesDownAction",
+                "group": "nasc",
+                "title": "D↓"
+            },
+            {
+                "command": "editor.action.addSelectionToNextFindMatch",
+                "group": "nasc",
+                "title": "🔎+"
+            },
+            {
+                "command": "editor.action.moveSelectionToNextFindMatch",
+                "group": "nasc",
+                "title": "🔎"
+            },
+            {
+                "command": "editor.action.toggleRenderWhitespace",
+                "group": "nasc",
+                "title": "a..b"
+            },
+            {
+                "command": "editor.action.previewDeclaration",
+                "group": "nasc",
+                "title": "ƒ ["
+            },
+            {
+                "command": "editor.action.referenceSearch.trigger",
+                "group": "nasc",
+                "title": "ƒ⥺"
+            },
+            {
+                "command": "workbench.action.openGlobalSettings",
+                "group": "nasc",
+                "title": "⚙"
+            },
+            {
+                "command": "editor.action.indentLines",
+                "group": "nasc",
+                "title": "→☰"
+            },
+            {
+                "command": "editor.action.outdentLines",
+                "group": "nasc",
+                "title": "←☰"
+            },
+            {
+                "command": "editor.action.jumpToBracket",
+                "group": "nasc",
+                "title": "→}"
+            },
+            {
+                "command": "editor.action.blockComment",
+                "group": "nasc",
+                "title": "/* */"
+            },
+            {
+                "command": "editor.action.commentLine",
+                "group": "nasc",
+                "title": "//"
             }
         ],
         "menus": {
@@ -105,6 +165,66 @@
                     "command": "workbench.action.showCommands",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.showCommands"
+                },
+                {
+                    "command": "editor.action.copyLinesDownAction",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.copyLineDown"
+                },
+                {
+                    "command": "editor.action.addSelectionToNextFindMatch",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.selectNext"
+                },
+                {
+                    "command": "editor.action.moveSelectionToNextFindMatch",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.goToNext"
+                },
+                {
+                    "command": "editor.action.toggleRenderWhitespace",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.toggleWhiteSpace"
+                },
+                {
+                    "command": "editor.action.previewDeclaration",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.peekDefinition"
+                },
+                {
+                    "command": "editor.action.referenceSearch.trigger",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.showReferences"
+                },
+                {
+                    "command": "workbench.action.openGlobalSettings",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.settings"
+                },
+                {
+                    "command": "editor.action.indentLines",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.indent"
+                },
+                {
+                    "command": "editor.action.outdentLines",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.outdent"
+                },
+                {
+                    "command": "editor.action.jumpToBracket",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.jumpToBracket"
+                },
+                {
+                    "command": "editor.action.blockComment",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.blockComment"
+                },
+                {
+                    "command": "editor.action.commentLine",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.commentLine"
                 }
             ]
         },
@@ -118,20 +238,15 @@
                         "default": true,
                         "description": "Go to Definition"
                     },
-                    "nasc-touchbar.addCursorAbove": {
-                        "type": "boolean",
-                        "default": false,
-                        "description": "Add cursor above"
-                    },
                     "nasc-touchbar.addCursorBelow": {
                         "type": "boolean",
                         "default": true,
                         "description": "Add cursor below"
                     },
-                    "nasc-touchbar.toggleSidebar": {
+                    "nasc-touchbar.rename": {
                         "type": "boolean",
                         "default": true,
-                        "description": "Toggle Sidebar"
+                        "description": "Rename Symbol. It will replace the variable or function name (for example) everywhere"
                     },
                     "nasc-touchbar.togglePanel": {
                         "type": "boolean",
@@ -143,10 +258,75 @@
                         "default": true,
                         "description": "Show Commands"
                     },
-                    "nasc-touchbar.rename": {
+                    "nasc-touchbar.selectNext": {
                         "type": "boolean",
                         "default": true,
-                        "description": "Rename Symbol"
+                        "description": "Select the next matching string (if a word is selected, uses this to search)"
+                    },
+                    "nasc-touchbar.toggleSidebar": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Toggle Sidebar"
+                    },
+                    "nasc-touchbar.addCursorAbove": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Add cursor above"
+                    },
+                    "nasc-touchbar.copyLineDown": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Copy the current line below"
+                    },
+                    "nasc-touchbar.goToNext": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Go to the next match (if a word is selected, uses this to search)"
+                    },
+                    "nasc-touchbar.toggleWhiteSpace": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Show or hide white spaces"
+                    },
+                    "nasc-touchbar.peekDefinition": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Peek definition/declaration"
+                    },
+                    "nasc-touchbar.showReferences": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "List references who use the current symbol"
+                    },
+                    "nasc-touchbar.settings": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Open user settings"
+                    },
+                    "nasc-touchbar.indent": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Indent text"
+                    },
+                    "nasc-touchbar.outdent": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Outdent text"
+                    },
+                    "nasc-touchbar.jumpToBracket": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Jump to matching bracket"
+                    },
+                    "nasc-touchbar.blockComment": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Toggles block comments ( /* ... */ ) for the current selection"
+                    },
+                    "nasc-touchbar.commentLine": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Toggles line comments ( // ) for the current selection"
                     }
                 }
             }
