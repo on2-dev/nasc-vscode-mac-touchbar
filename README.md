@@ -13,13 +13,13 @@ The list of features are:
 
 - Go to definition
 - Add cursor above
-- Add cursor bellow
+- Add cursor below
 - Run command
 - Toggle side bar
-- Toggle Pannel/terminal
+- Toggle Panel/terminal
 - Rename/replace all
 - Duplicate lines
-- Togle white space characters
+- Toggle white space characters
 - Peek definition
 - Show references
 - Settings
@@ -34,11 +34,11 @@ The list of features are:
 ## Settings
 
 You can choose the buttons by setting the following settings.  
-Please have in mind the limit of 6 active buttons (if you have the OS controll strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
+Please have in mind the limit of 6 active buttons (if you have the OS control strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
 
 - "nasc-touchbar.goToDefinition": (default _true_) Go to the function or variable definition
 - "nasc-touchbar.addCursorAbove": (default _false_) Add a cursor in the line above
-- "nasc-touchbar.addCursorBellow": (default _true_) Add a cursor in the line bellow
+- "nasc-touchbar.addCursorBelow": (default _true_) Add a cursor in the line below
 - "nasc-touchbar.selectNext": (default _true_) Adds a selection to the 
 - "nasc-touchbar.toggleSidebar": (default _false_) Toggles the sidebar
 - "nasc-touchbar.togglePanel": (default _true_) Toggles the panel in the bottom of the editor
@@ -46,7 +46,7 @@ Please have in mind the limit of 6 active buttons (if you have the OS controll s
 - "nasc-touchbar.rename": (default _true_) Rename (replace all) variable or function names
 - "nasc-touchbar.copyLineDown": (default _false_) Duplicates the current line (or selected lines) 
 - "nasc-touchbar.goToNext": (default _false_) Go to next match
-- "nasc-touchbar.togleWhiteSpace": (default _false_) Show or hide white spaces
+- "nasc-touchbar.toggleWhiteSpace": (default _false_) Show or hide white spaces
 - "nasc-touchbar.peekDefinition": (default _false_) Peek definition/declaration
 - "nasc-touchbar.showReferences": (default _false_) List references who use the current symbol
 - "nasc-touchbar.settings": (default _false_) Open user settings

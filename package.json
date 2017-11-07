@@ -24,7 +24,7 @@
     "activationEvents": [
         "onCommand:nasc.touchBar.goToDefinition",
         "onCommand:nasc.touchBar.addCursorAbove",
-        "onCommand:nasc.touchBar.addCursorBellow",
+        "onCommand:nasc.touchBar.addCursorBelow",
         "onCommand:nasc.touchBar.enableFuncGroup",
         "onCommand:nasc.touchBar.enableSrcGroup",
         "onCommand:nasc.touchBar.enableEditorGroup",
@@ -48,7 +48,7 @@
                 "title": "↑𝙸"
             },
             {
-                "command": "nasc.touchBar.addCursorBellow",
+                "command": "nasc.touchBar.addCursorBelow",
                 "group": "nasc",
                 "title": "↓𝙸"
             },
@@ -246,12 +246,12 @@
                     "when": "enabledCursorsGroup"
                 },
                 {
-                    "command": "nasc.touchBar.addCursorBellow",
+                    "command": "nasc.touchBar.addCursorBelow",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.addCursorBellow && !enabledGroup"
                 },
                 {
-                    "command": "nasc.touchBar.addCursorBellow",
+                    "command": "nasc.touchBar.addCursorBelow",
                     "group": "nasc",
                     "when": "enabledCursorsGroup"
                 },
@@ -308,7 +308,7 @@
                 {
                     "command": "editor.action.toggleRenderWhitespace",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.togleWhiteSpace && !enabledGroup"
+                    "when": "config.nasc-touchbar.toggleWhiteSpace && !enabledGroup"
                 },
                 {
                     "command": "editor.action.toggleRenderWhitespace",
@@ -379,7 +379,7 @@
         },
         "configuration": [
             {
-                "title": "Something",
+                "title": "Nasc Touch Bar Settings",
                 "type": "object",
                 "properties": {
                     "nasc-touchbar.goToDefinition": {
@@ -387,10 +387,10 @@
                         "default": true,
                         "description": "Go to Definition"
                     },
-                    "nasc-touchbar.addCursorBellow": {
+                    "nasc-touchbar.addCursorBelow": {
                         "type": "boolean",
                         "default": true,
-                        "description": "Add cursor bellow"
+                        "description": "Add cursor below"
                     },
                     "nasc-touchbar.rename": {
                         "type": "boolean",
@@ -445,14 +445,14 @@
                     "nasc-touchbar.copyLineDown": {
                         "type": "boolean",
                         "default": false,
-                        "description": "Copy the current line bellow"
+                        "description": "Copy the current line below"
                     },
                     "nasc-touchbar.goToNext": {
                         "type": "boolean",
                         "default": false,
                         "description": "Go to the next match (if a word is selected, uses this to search)"
                     },
-                    "nasc-touchbar.togleWhiteSpace": {
+                    "nasc-touchbar.toggleWhiteSpace": {
                         "type": "boolean",
                         "default": false,
                         "description": "Show or hide white spaces"
