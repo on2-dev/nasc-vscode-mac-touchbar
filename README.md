@@ -3,6 +3,8 @@
 This adds a few useful features to your Macbook Pro's touch bar while you are working in VSCode.
 **Read the notes in the end of this document**
 
+Installation link (if your are not seeing this from inside VSCode): https://marketplace.visualstudio.com/items?itemName=felipe.nasc-touchbar#overview
+
 ## Features
 
 This is how your touchbar will look like:
