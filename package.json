@@ -253,7 +253,7 @@
                 {
                     "command": "nasc.touchBar.addCursorBelow",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.addCursorBellow && !enabledGroup"
+                    "when": "config.nasc-touchbar.addCursorBelow && !enabledGroup"
                 },
                 {
                     "command": "nasc.touchBar.addCursorBelow",
