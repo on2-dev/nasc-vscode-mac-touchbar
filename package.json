@@ -156,6 +156,11 @@
                 "command": "nasc.touchBar.closeGroup",
                 "group": "nasc",
                 "title": " 🅧 "
+            },
+            {
+                "command": "git.sync",
+                "group": "nasc",
+                "title": "↻"
             }
         ],
         "menus": {
@@ -248,7 +253,7 @@
                 {
                     "command": "nasc.touchBar.addCursorBelow",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.addCursorBellow && !enabledGroup"
+                    "when": "config.nasc-touchbar.addCursorBelow && !enabledGroup"
                 },
                 {
                     "command": "nasc.touchBar.addCursorBelow",
@@ -374,6 +379,11 @@
                     "command": "editor.action.commentLine",
                     "group": "nasc",
                     "when": "enabledSrcGroup"
+                },
+                {
+                    "command": "git.sync",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.gitSync && !enabledGroup"
                 }
             ]
         },
@@ -496,6 +506,11 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Toggles line comments ( // ) for the current selection"
+                    },
+                    "nasc-touchbar.gitSync": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Git Sync"
                     }
                 }
             }
