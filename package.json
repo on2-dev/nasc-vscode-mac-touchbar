@@ -509,7 +509,7 @@
                     },
                     "nasc-touchbar.gitSync": {
                         "type": "boolean",
-                        "default": true,
+                        "default": false,
                         "description": "Git Sync"
                     }
                 }
@@ -520,6 +520,7 @@
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
     },
+    "license": "MIT",
     "icon": "nasc-macbook-pro-vscode-touch-bar.jpg",
     "devDependencies": {
         "typescript": "^2.5.2",

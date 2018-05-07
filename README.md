@@ -108,6 +108,9 @@ Editor
     - Togle white space characters
     - Settings
 
+## Contributing:
+
+Please, refer to the [_CONTRIBUTING.md_](https://github.com/NascHQ/nasc-vscode-mac-touchbar/blob/master/CONTRIBUTING.md) file and help this project grow :)
 
 ## NOTES:
 
@@ -115,3 +118,5 @@ Important, if the buttons don't fit in the bar, they will not be shown (this is 
 If the bar disappeared, see the options (ctrl+, or cmd+,), filter by "nasc" e adjust the settings.
 
 Usually, if your are not using the "Strip" group of buttons, you can fit **9** buttons on it. If you have the OS's _Strip_ buttons enabled, you can fit **6** buttons.
+
+
