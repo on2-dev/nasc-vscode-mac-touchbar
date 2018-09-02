@@ -162,6 +162,11 @@
                 "command": "git.sync",
                 "group": "nasc",
                 "title": "↻"
+            },
+            {
+                "command": "extension.dash.emptySyntax",
+                "group": "nasc",
+                "title": "🧠"
             }
         ],
         "menus": {
@@ -385,6 +390,11 @@
                     "command": "git.sync",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.gitSync && !enabledGroup"
+                },
+                {
+                    "command": "extension.dash.emptySyntax",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.docs && !enabledGroup"
                 }
             ]
         },
@@ -512,6 +522,11 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Git Sync"
+                    },
+                    "nasc-touchbar.docs": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Documentation"
                     }
                 }
             }
