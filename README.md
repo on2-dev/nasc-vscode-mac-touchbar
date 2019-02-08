@@ -9,7 +9,7 @@ Installation link (if your are not seeing this from inside VSCode): https://mark
 
 This is how your touchbar will look like:
 
-![Touchbar visualization](nasc-macbook-pro-vscode-touch-bar.jpg)
+![Touchbar visualization](images/nasc-macbook-pro-vscode-touch-bar.png)
 
 ![Touchbar visualization](images/editor-group.png)
 ![Touchbar visualization](images/functions-group.png)
@@ -42,12 +42,12 @@ The list of features are:
 ## Settings
 
 You can choose the buttons by setting the following settings.  
-Please have in mind the limit of 6 active buttons (if you have the OS control strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
+Please have in mind the limit of 5 active buttons (if you have the OS control strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
 
 - "nasc-touchbar.goToDefinition": (default _true_) Go to the function or variable definition
 - "nasc-touchbar.addCursorAbove": (default _false_) Add a cursor in the line above
 - "nasc-touchbar.addCursorBelow": (default _true_) Add a cursor in the line below
-- "nasc-touchbar.selectNext": (default _true_) Adds a selection to the 
+- "nasc-touchbar.selectNext": (default _false_) Selects next match 
 - "nasc-touchbar.toggleSidebar": (default _false_) Toggles the sidebar
 - "nasc-touchbar.togglePanel": (default _true_) Toggles the panel in the bottom of the editor
 - "nasc-touchbar.showCommands": (default _true_) Shows the _run command_ prompt
@@ -76,7 +76,6 @@ Here they are:
 Functions
 
     - Close group
-    - Go to definition
     - Peek definition
     - Show references
     - Rename/replace all
@@ -89,7 +88,6 @@ Source
     - Indent
     - Outdent
     - Block comment
-    - Comment line
 
 Cursors
 
@@ -106,7 +104,6 @@ Editor
     - Toggle side bar
     - Toggle Pannel/terminal
     - Togle white space characters
-    - Settings
 
 ## Contributing:
 
@@ -115,8 +112,8 @@ Please, refer to the [_CONTRIBUTING.md_](https://github.com/NascHQ/nasc-vscode-m
 ## NOTES:
 
 Important, if the buttons don't fit in the bar, they will not be shown (this is a current bug in VSCode support for the TouchBar and soon to be fixed).  
-If the bar disappeared, see the options (ctrl+, or cmd+,), filter by "nasc" e adjust the settings.
+If the bar disappeared, see the options (ctrl+, or cmd+,), filter by "nasc" and adjust the settings.
 
-Usually, if your are not using the "Strip" group of buttons, you can fit **9** buttons on it. If you have the OS's _Strip_ buttons enabled, you can fit **6** buttons.
+Usually, if your are not using the "Strip" group of buttons, you can fit **9** buttons on it. If you have the OS's _Strip_ buttons enabled, you can fit **5** buttons.
 
 
