@@ -31,7 +31,7 @@ Usually, if your are not using the "Strip" group of buttons, you can fit **9** b
 
 ## 1.7.0
 
-- Togle white space characters
+- Toggle white space characters
 - Peek definition
 - Show references
 - Settings
