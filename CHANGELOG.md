@@ -48,3 +48,12 @@ Usually, if your are not using the "Strip" group of buttons, you can fit **9** b
 - Supporting group _enableSrcGroup_
 - Supporting group _enableCursorsGroup_
 - Supporting group _enableEditorGroup_
+
+## 1.12.0
+
+- Merged pending pull requests
+- Fixed to work with VSCode v1.3.1.0+
+- Fixed typos
+- Added button "go to next error in files"
+- Added support for `dash` for those who use the extension
+
