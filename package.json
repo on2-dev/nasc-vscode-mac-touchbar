@@ -2,7 +2,7 @@
     "name": "nasc-touchbar",
     "displayName": "Nasc VSCode Touchbar",
     "description": "Adds useful tools to your macbook touchbar.",
-    "version": "1.13.0",
+    "version": "1.14.0",
     "publisher": "felipe",
     "engines": {
         "vscode": "^1.17.0"
