@@ -74,6 +74,11 @@
                 "title": "✎_"
             },
             {
+                "command": "editor.action.marker.nextInFiles",
+                "group": "nasc",
+                "title": "⇝"
+            },
+            {
                 "command": "editor.action.copyLinesDownAction",
                 "group": "nasc",
                 "title": "☰↓"
@@ -210,6 +215,11 @@
                     "command": "editor.action.rename",
                     "group": "nasc",
                     "when": "enabledFuncGroup"
+                },
+                {
+                    "command": "editor.action.marker.nextInFiles",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.nextInFiles"
                 },
                 {
                     "command": "editor.action.previewDeclaration",
@@ -402,6 +412,11 @@
                         "type": "boolean",
                         "default": true,
                         "description": "Rename Symbol. It will replace the variable or function name (for example) everywhere"
+                    },
+                    "nasc-touchbar.nextInFiles": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Jump to next error in project"
                     },
                     "nasc-touchbar.togglePanel": {
                         "type": "boolean",
