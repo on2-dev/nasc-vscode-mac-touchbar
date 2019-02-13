@@ -123,7 +123,7 @@ function activate(context) {
                 var newPositionE = position.with(found.range._end.line, found.range._end.character);
                 var newSelection = new vscode.Selection(newPositionS, newPositionE);
 
-                vscode.commands.executeCommand('vscode.open', found.uri, 50).then(result => {
+                vscode.commands.executeCommand('vscode.open', found.uri).then(result => {
                     var editor = vscode.window.activeTextEditor;
                     editor.selection = newSelection
                     vscode.commands.executeCommand('revealLine', {
