@@ -197,11 +197,6 @@
                     "when": "config.nasc-touchbar.goToDefinition && !enabledGroup"
                 },
                 {
-                    "command": "nasc.touchBar.goToDefinition",
-                    "group": "nasc",
-                    "when": "enabledFuncGroup"
-                },
-                {
                     "command": "editor.action.rename",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.rename && !enabledGroup"
@@ -327,11 +322,6 @@
                     "when": "config.nasc-touchbar.settings && !enabledGroup"
                 },
                 {
-                    "command": "workbench.action.openGlobalSettings",
-                    "group": "nasc",
-                    "when": "enabledEditorGroup"
-                },
-                {
                     "command": "editor.action.copyLinesDownAction",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.copyLineDown && !enabledGroup"
@@ -377,11 +367,6 @@
                     "when": "config.nasc-touchbar.commentLine && !enabledGroup"
                 },
                 {
-                    "command": "editor.action.commentLine",
-                    "group": "nasc",
-                    "when": "enabledSrcGroup"
-                },
-                {
                     "command": "git.sync",
                     "group": "nasc",
                     "when": "config.nasc-touchbar.gitSync && !enabledGroup"
@@ -420,7 +405,7 @@
                     },
                     "nasc-touchbar.selectNext": {
                         "type": "boolean",
-                        "default": true,
+                        "default": false,
                         "description": "Select the next matching string (if a word is selected, uses this to search)"
                     },
                     "nasc-touchbar.enableFuncGroup": {
