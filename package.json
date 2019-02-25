@@ -69,6 +69,12 @@
                 "title": ">_"
             },
             {
+				"command": "editor.action.formatDocument",
+				"group": "nasc",
+				"when": "nasc",
+				"title": "⇝ƒ⇜"
+			},
+            {
                 "command": "editor.action.rename",
                 "group": "nasc",
                 "title": "✎_"
@@ -206,6 +212,16 @@
                     "group": "nasc",
                     "when": "config.nasc-touchbar.goToDefinition && !enabledGroup"
                 },
+                {
+					"command": "editor.action.formatDocument",
+					"group": "nasc",
+					"when": "config.nasc-touchbar.rename && !enabledGroup"
+				},
+				{
+					"command": "editor.action.formatDocument",
+					"group": "nasc",
+					"when": "enabledFuncGroup"
+				},
                 {
                     "command": "editor.action.rename",
                     "group": "nasc",
@@ -408,6 +424,11 @@
                         "default": true,
                         "description": "Add cursor below"
                     },
+                    "nasc-touchbar.formatDocument": {
+						"type": "boolean",
+						"default": true,
+						"description": "Format the document"
+					},
                     "nasc-touchbar.rename": {
                         "type": "boolean",
                         "default": true,
