@@ -216,11 +216,6 @@
 					"group": "nasc",
 					"when": "config.nasc-touchbar.formatDocument && !enabledGroup"
 				},
-				{
-					"command": "editor.action.formatDocument",
-					"group": "nasc",
-					"when": "enabledFuncGroup"
-				},
                 {
                     "command": "editor.action.rename",
                     "group": "nasc",
