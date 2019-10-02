@@ -71,7 +71,6 @@
             {
 				"command": "editor.action.formatDocument",
 				"group": "nasc",
-				"when": "nasc",
 				"title": "⇝ƒ⇜"
 			},
             {
@@ -215,7 +214,7 @@
                 {
 					"command": "editor.action.formatDocument",
 					"group": "nasc",
-					"when": "config.nasc-touchbar.rename && !enabledGroup"
+					"when": "config.nasc-touchbar.formatDocument && !enabledGroup"
 				},
 				{
 					"command": "editor.action.formatDocument",

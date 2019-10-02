@@ -63,6 +63,7 @@ Please have in mind the limit of 5 active buttons (if you have the OS control st
 - "nasc-touchbar.jumpToBracket": (default _false_) Jump to matching bracket
 - "nasc-touchbar.blockComment": (default _false_) Toggles block comments ( /* ... */ ) for the current selection
 - "nasc-touchbar.commentLine": (default _false_) Toggles line comments ( // ) for the current selection
+- "nasc-touchbar.formatDocument": (default _false_) Formats the current document
 - "nasc-touchbar.docs": (default _false_) Show documentation for current file in Dash / Zeal. Requires extension _deerawan.vscode-dash_
 - "nasc-touchbar.enableFuncGroup": (default _false_) Adds a group with the buttons related to _Functions_
 - "nasc-touchbar.enableSrcGroup": (default _false_)  Adds a group with the buttons related to the _Source code_
