@@ -108,6 +108,10 @@ function activate(context) {
     vscode.commands.registerCommand('nasc.touchBar.goToDefinition', function () {
         vscode.commands.executeCommand('editor.action.goToDeclaration');
     });
+
+    vscode.commands.registerCommand('nasc.touchBar.formatDocument', function () {
+        vscode.commands.executeCommand('editor.action.formatDocument');
+    });
     
     const prov = vscode.languages.registerDefinitionProvider(
         GO_MODE, go2Def
