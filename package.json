@@ -177,6 +177,11 @@
                 "command": "extension.dash.emptySyntax",
                 "group": "nasc",
                 "title": "🧠"
+            },
+            {
+                "command": "extension.dash.specific",
+                "group": "nasc",
+                "title": "🧠🔎"
             }
         ],
         "menus": {
@@ -399,7 +404,12 @@
                 {
                     "command": "extension.dash.emptySyntax",
                     "group": "nasc",
-                    "when": "config.nasc-touchbar.docs && !enabledGroup"
+                    "when": "config.nasc-touchbar.docs && !editorHasSelection && !enabledGroup || config.nasc-touchbar.docs && !config.nasc-touchbar.docsSelection && !enabledGroup"
+                },
+                {
+                    "command": "extension.dash.specific",
+                    "group": "nasc",
+                    "when": "config.nasc-touchbar.docsSelection && editorHasSelection && !enabledGroup || config.nasc-touchbar.docsSelection && !config.nasc-touchbar.docs && !enabledGroup"
                 }
             ]
         },
@@ -542,6 +552,11 @@
                         "type": "boolean",
                         "default": false,
                         "description": "Documentation"
+                    },
+                    "nasc-touchbar.docsSelection": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Opens documentation for current selection"
                     }
                 }
             }

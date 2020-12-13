@@ -38,11 +38,13 @@ The list of features are:
 - Comment line
 - Select next
 - Go to next
+- Open Dash / Zeal
+- Search Dash / Zeal with current selection
 
 ## Settings
 
 You can choose the buttons by setting the following settings.  
-Please have in mind the limit of 5 active buttons (if you have the OS control strip enabled, 9 buttons if you don't) . More than that will break the layout and the buttons will not be visible.
+Please have in mind the limit of 5 active buttons (if you have the OS control strip enabled, 9 buttons if you don't). More than that will break the layout and the buttons will not be visible. It is possible to hide the default VSCode buttons, see **NOTES** at the end of the documentation.
 
 - "nasc-touchbar.goToDefinition": (default _true_) Go to the function or variable definition
 - "nasc-touchbar.addCursorAbove": (default _false_) Add a cursor in the line above
@@ -65,6 +67,7 @@ Please have in mind the limit of 5 active buttons (if you have the OS control st
 - "nasc-touchbar.commentLine": (default _false_) Toggles line comments ( // ) for the current selection
 - "nasc-touchbar.formatDocument": (default _false_) Formats the current document
 - "nasc-touchbar.docs": (default _false_) Show documentation for current file in Dash / Zeal. Requires extension _deerawan.vscode-dash_
+- "nasc-touchbar.docsSelection": (default _false_) Shows documentation for current selection in Dash / Zeal, depending on the doctype. Requires extension _deerawan.vscode-dash_ If "nasc-touchbar.docs" is enabled, then the docs icon will display when there is no selection, and will swap to this tool once text is selected. 
 - "nasc-touchbar.enableFuncGroup": (default _false_) Adds a group with the buttons related to _Functions_
 - "nasc-touchbar.enableSrcGroup": (default _false_)  Adds a group with the buttons related to the _Source code_
 - "nasc-touchbar.enableCursorsGroup": (default _false_)  Adds a group with the buttons related to your _cursors_
@@ -118,4 +121,16 @@ If the bar disappeared, see the options (ctrl+, or cmd+,), filter by "nasc" and 
 
 Usually, if your are not using the "Strip" group of buttons, you can fit **9** buttons on it. If you have the OS's _Strip_ buttons enabled, you can fit **5** buttons.
 
-
+If you would like to create more space by removing VSCode's default buttons you can do so with the `keyboard.touchbar.ignored` setting, adding some or all of the following to the ignored list:
+- workbench.action.navigateBack
+- workbench.action.navigateForward
+- workbench.action.debug.start
+- workbench.action.debug.run
+- workbench.action.debug.restart
+- workbench.action.debug.stepOver
+- workbench.action.debug.stepInto
+- workbench.action.debug.stepOut
+- workbench.action.debug.stop
+- workbench.action.debug.continue
+- workbench.action.debug.pause
+See [this pull request](https://github.com/microsoft/vscode/pull/70174) to vscode for more information on the implementation of this customisation. This is not a feature of nasc-vscode-mac-touchbar, but a feature of vscode, and so the above list may change at any time.
