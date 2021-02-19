@@ -140,5 +140,5 @@ See [this pull request](https://github.com/microsoft/vscode/pull/70174) to vscod
 
 Buy us a beer :)
 
-BTC: 1GuTME1bGbk7hY7ssrUBh3M1k4AeyVCSjW
-ETH: 0x49f1612d4a8e9165f2eb94be79af9dbbf3815af5
+**BTC:** 1GuTME1bGbk7hY7ssrUBh3M1k4AeyVCSjW. 
+**ETH:** 0x49f1612d4a8e9165f2eb94be79af9dbbf3815af5
