@@ -134,3 +134,11 @@ If you would like to create more space by removing VSCode's default buttons you 
 - workbench.action.debug.continue
 - workbench.action.debug.pause
 See [this pull request](https://github.com/microsoft/vscode/pull/70174) to vscode for more information on the implementation of this customisation. This is not a feature of nasc-vscode-mac-touchbar, but a feature of vscode, and so the above list may change at any time.
+
+
+## Donate:
+
+Buy us a beer :)
+
+BTC: 1GuTME1bGbk7hY7ssrUBh3M1k4AeyVCSjW
+ETH: 0x49f1612d4a8e9165f2eb94be79af9dbbf3815af5
