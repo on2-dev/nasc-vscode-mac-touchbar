@@ -1,0 +1,28 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        node-version: [ 16 ]
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    - run: yarn global add vsce --prefix /usr/local
+    - run: vsce --version
+    - run: yarn install --frozen-lockfile
+    - run: vsce package
+    - uses: actions/upload-artifact@v3
+      with:
+          name: vscode-mac-touchbar-extension
+          path: '*.vsix'
